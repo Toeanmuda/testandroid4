@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="1">
+
+    <!-- Order Summary Text -->
+    <TextView
+        android:id="@+id/orderSummaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Summary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Total Price Text -->
+    <TextView
+        android:id="@+id/totalPriceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: $0.00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirmCheckoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:text="Confirm Checkout"
+        android:textColor="@android:color/black"
+        android:background="@drawable/button_style"/>
+
+</LinearLayout>

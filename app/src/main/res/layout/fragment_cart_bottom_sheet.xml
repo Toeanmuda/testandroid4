@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Cart"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinueShopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue Shopping"
+        app:layout_constraintTop_toBottomOf="@id/btnViewCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</LinearLayout>
