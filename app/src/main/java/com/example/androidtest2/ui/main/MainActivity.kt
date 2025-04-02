@@ -86,8 +86,11 @@ class MainActivity : AppCompatActivity() {
         productViewModel.getCategories()
 
         progressDialog.show()
+    }
 
-
+    override fun onResume() {
+        super.onResume()
+        productViewModel.updateCartItemCount()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
